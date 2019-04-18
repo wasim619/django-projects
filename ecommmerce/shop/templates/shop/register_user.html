@@ -1,0 +1,30 @@
+{% extends 'shop/basic.html' %}
+
+{% block body %}
+
+<div class="container col-md-6 offset-md-3 my-4">
+    <h2 class='text-center'>Register</h2>
+    <form action="{% url 'register' %}" method = 'POST'>
+    {% csrf_token %}
+
+    {% if form.errors %}
+       <div class="alert alert-warning alert-dismissible fade show" role="alert">
+
+          <button class="close" data-dismiss="alert" aria-label="Close">
+            <small><sup>x</sup></small>
+          </button>
+        <p> your form has errors..</p>
+        {% for field in form %}
+            {% if field.errors %}
+                {{ field.errors }}
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {{ form.as_p }}
+
+    <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+</div>
+{% endblock %}
