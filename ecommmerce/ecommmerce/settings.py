@@ -18,7 +18,7 @@ from ap import apyori
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-algo = load(r'/home/wasim/users/WasimSayyed/dev/ecommerce/ecommmerce/shop/items.pkl')
+algo = load(r'shop/items.pkl')
 
 
 # Quick-start development settings - unsuitable for production
