@@ -98,17 +98,7 @@ WSGI_APPLICATION = 'ecommmerce.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-     'default': {
-              'ENGINE': 'django.db.backends.mysql',
-              'NAME': 'ecommerce',
-              'USER': 'django_ecommerce',
-              'PASSWORD': 'xztmfSAKhtXyM4v',
-              'HOST': 'django-ecommerce-db.cljfgmgwfhdv.us-east-2.rds.amazonaws.com',
-              'PORT': '3306',
 
-    }
-}
 
 
 # Password validation
