@@ -86,17 +86,17 @@ WSGI_APPLICATION = 'ecommmerce.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#      'default': {
-#               'ENGINE': 'django.db.backends.mysql',
-#               'NAME': 'ecommerce',
-#               'USER': 'wasim',
-#               'PASSWORD': '9820',
-#               'HOST': 'localhost',
-#               'PORT': '',
+DATABASES = {
+     'default': {
+              'ENGINE': 'django.db.backends.mysql',
+              'NAME': 'ecommerce',
+              'USER': 'wasim',
+              'PASSWORD': '9820',
+              'HOST': 'localhost',
+              'PORT': '',
 
-#     }
-# }
+    }
+}
 
 
 
